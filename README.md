@@ -1,6 +1,6 @@
 # Auto Bongo
 
-If you want to get all Bongo Cat Steam achievements quickly you may have noticed it doesn't allow your typical auto clickers and it tries to detect only "real" clicks. So instead here is a python program that auto clicks with these "real" clicks.
+If you want to get all Bongo Cat Steam achievements quickly you may have noticed it doesn't allow your typical auto clickers, and it tries to detect only "real" clicks. So instead here is a python program that auto clicks with these "real" clicks.
 
 ## Installing & Running
 

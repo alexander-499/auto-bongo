@@ -5,11 +5,13 @@ import keyboard
 import tkinter as tk
 
 pyautogui.PAUSE = 0
-keys = [ "a","b","c","d","e","f","g","h","i","j","k","l","m", "n","o","q","r","s","t","u","v","w","x","y","z", "0","1","2","3","4","5","6","7","8","9" ]
 
-Interval = 0.01
+interval = 0.01
 key_to_press = "space"
 toggle_key = "p"
+
+keys = list("abcdefghijklmopqrstuvwyz0123456789")
+keys.remove(toggle_key)
 
 running = False
 lock = threading.Lock()
@@ -31,7 +33,7 @@ def auto_press():
             print(f"Error at {key} (keyUp): {e}")
         pyautogui.keyDown(key_to_press)
         pyautogui.keyUp(key_to_press)
-    time.sleep(Interval)
+    time.sleep(interval)
 
 def toggle_running():
   global running
